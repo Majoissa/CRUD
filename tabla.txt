@@ -1,0 +1,12 @@
+CREATE TABLE `Employees` (
+ `ECode` int(11) NOT NULL,
+ `EName` varchar(30) NOT NULL,
+ `ESurname1` varchar(30) NOT NULL,
+ `ESurname2` varchar(30) NOT NULL,
+ `EEmail` varchar(50) NOT NULL,
+ `EType` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+ALTER TABLE `Employees`
+ ADD PRIMARY KEY (`ECode`);
+ALTER TABLE `Employees`
+ MODIFY `ECode` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
